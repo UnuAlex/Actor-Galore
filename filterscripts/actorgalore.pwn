@@ -26,7 +26,7 @@
 #define A_NAME 16
 #define DEFAULT_ANIMS 44
 
-#define ADMIN_REQ false //Set to false for debugging
+#define ADMIN_REQ true //Set to false for debugging
 
 #define m_admin "(!) You don't have permission to use this command!"
 
