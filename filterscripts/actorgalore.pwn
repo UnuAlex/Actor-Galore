@@ -176,7 +176,7 @@ CMD:actorhelp(playerid, params[])
 	SCM(playerid, 0x207B18FF, "_______ACTOR GALORE HELP_______");
 	SCM(playerid, 0xE99738FF, "/nactor - Create new actor.");
 	SCM(playerid, 0x2EB023FF, "/dactor - Destroy actor.");
-	SCM(playerid, 0xE99738FF, "/aactor - Change actor animation.");
+	SCM(playerid, 0xE99738FF, "/aanim - Change actor animation.");
 	SCM(playerid, 0x2EB023FF, "/aexport - Export actors into script format.");
 	SCM(playerid, 0xE99738FF, "/alabels - Show/Hide the actor labels.");
 	SCM(playerid, 0x2EB023FF, "/apos - Relocate an actor at your current posiotion.");
