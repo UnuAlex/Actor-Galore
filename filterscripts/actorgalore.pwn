@@ -176,7 +176,7 @@ CMD:actorhelp(playerid, params[])
 	SCM(playerid, 0x207B18FF, "_______ACTOR GALORE HELP_______");
 	SCM(playerid, 0xE99738FF, "/nactor - Create new actor.");
 	SCM(playerid, 0x2EB023FF, "/dactor - Destroy actor.");
-	SCM(playerid, 0xE99738FF, "/aanim - Change actor animation.");
+	SCM(playerid, 0xE99738FF, "/aactor - Change actor animation.");
 	SCM(playerid, 0x2EB023FF, "/aexport - Export actors into script format.");
 	SCM(playerid, 0xE99738FF, "/alabels - Show/Hide the actor labels.");
 	SCM(playerid, 0x2EB023FF, "/apos - Relocate an actor at your current posiotion.");
@@ -620,7 +620,7 @@ function ExportActors(filename[])
     		if(aInfo[i][animation] > 0 && anim_info[aInfo[i][animation]][valid])
     		{
     		    new anim = aInfo[i][animation];
-    		    format(entry,sizeof(entry),"ApplyDynamicActorAnimation(actorvar,%s,%s,%f,%d,%d,%d,%d,%d);",anim_info[anim][alib],anim_info[anim][aname],anim_info[anim][fdelta],anim_info[anim][loop],anim_info[anim][lockx],anim_info[anim][locky],anim_info[anim][freeze],anim_info[anim][time]);
+    		    format(entry,sizeof(entry),"ApplyDynamicActorAnimation(actorvar,\"%s\",\"%s\",%f,%d,%d,%d,%d,%d);\n",anim_info[anim][alib],anim_info[anim][aname],anim_info[anim][fdelta],anim_info[anim][loop],anim_info[anim][lockx],anim_info[anim][locky],anim_info[anim][freeze],anim_info[anim][time]);
     		    fwrite(hFile, entry);
     		}
 		}
